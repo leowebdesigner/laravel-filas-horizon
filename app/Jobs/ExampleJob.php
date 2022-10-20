@@ -33,7 +33,7 @@ class ExampleJob implements ShouldQueue
     public function handle()
     {
         Log::info('Start ExampleJob');
-        //sleep(10);
+        sleep(10);
         throw new Exception('teste exception');
         Log::info('End ExampleJob');
     }
