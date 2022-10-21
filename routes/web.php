@@ -2,9 +2,9 @@
 
 use App\Jobs\ExampleJob;
 use App\Mail\TestMail;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-
 
 Route::get('/test-email', function(){
    Mail::to('contato@leowebdesigner.com.br')
